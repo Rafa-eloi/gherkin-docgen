@@ -22,7 +22,12 @@ npm install --save-dev gherkin-docgen
 
 🚀 Uso
 ```bash
-npx gherkin-docgen --dir cypress/e2e --output gherkin-docs.md
+# Instalação local (projeto)
+npm install --save-dev gherkin-docgen
+
+# Ou instalação global
+npm install -g gherkin-docgen
+
 ```
 
 Opções:
@@ -66,6 +71,12 @@ npm install
 npm run start
 ```
 ---
+
+## 📦 Disponível no NPM
+```markdown
+[![npm version](https://img.shields.io/npm/v/gherkin-docgen)](https://www.npmjs.com/package/gherkin-docgen)
+```
+
 
 🤝 Contribuições
 Contribuições são bem-vindas! Sinta-se livre para abrir issues ou enviar PRs com melhorias.
