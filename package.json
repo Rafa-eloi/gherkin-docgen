@@ -1,0 +1,28 @@
+{
+  "name": "gherkin-docgen",
+  "version": "1.0.0",
+  "description": "Ferramenta CLI para gerar documentação a partir de arquivos Gherkin (.feature)",
+  "main": "bin/index.js",
+  "bin": {
+    "gherkin-docgen": "bin/index.js"
+  },
+  "scripts": {
+    "start": "node bin/index.js"
+  },
+  "keywords": [
+    "cypress",
+    "gherkin",
+    "cucumber",
+    "documentation",
+    "cli"
+  ],
+  "author": "Rafael Eloi",
+  "license": "MIT",
+  "dependencies": {
+    "@cucumber/gherkin": "^24.0.0",
+    "@cucumber/messages": "^24.0.0",
+    "commander": "^11.0.0",
+    "fs-extra": "^11.1.1",
+    "glob": "^10.3.10"
+  }
+}
