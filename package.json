@@ -1,6 +1,6 @@
 {
   "name": "gherkin-docgen",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Ferramenta CLI para gerar documentação a partir de arquivos Gherkin (.feature)",
   "main": "bin/index.js",
   "bin": {
