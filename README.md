@@ -22,14 +22,40 @@ npm install --save-dev gherkin-docgen
 
 # Ou instalação global
 npm install -g gherkin-docgen
+```
+---
 
+## 🚀 Uso
+
+Você pode executar via npx:
+```bash
+npx gherkin-docgen --dir <caminho-das-features> --output <arquivo-saida.md>
 ```
 
 Opções:
-| Flag       | Descrição                                          |
-| ---------- | -------------------------------------------------- |
-| `--dir`    | Caminho da pasta onde estão os arquivos `.feature` |
-| `--output` | Caminho do arquivo markdown de saída               |
+| Flag           | Descrição                                          |
+| -------------- | -------------------------------------------------- |
+| `--dir, -d`    | Caminho da pasta onde estão os arquivos `.feature` |
+| `--output, -o` | Caminho do arquivo markdown de saída               |
+
+Exemplo:
+```bash
+npx gherkin-docgen --dir cypress/e2e --output docs/gherkin.md
+```
+
+💡 Dica: usar script no package.json
+Adicione no seu package.json:
+
+```json
+"scripts": {
+  "gherkin:doc": "gherkin-docgen --dir cypress/e2e --output docs/gherkin.md"
+}
+```
+
+Depois execute com:
+```bash
+npm run gherkin:doc
+```
 
 ---
 
@@ -45,7 +71,6 @@ Funcionalidade: Login do usuário
 ```
 
 
-
 📄 Exemplo de Saída
 ```markdown
 ## Funcionalidade: Login do usuário
@@ -57,8 +82,9 @@ Funcionalidade: Login do usuário
 - Quando ele insere credenciais válidas
 - Então ele deve ser redirecionado para a página principal
 ```
+---
 
-🛠️ Desenvolvimento
+## 🛠️ Desenvolvimento
 ```bash
 git clone https://github.com/seu-usuario/gherkin-docgen.git
 cd gherkin-docgen
@@ -67,10 +93,10 @@ npm run start
 ```
 ---
 
-
-🤝 Contribuições
+## 🤝 Contribuições
 Contribuições são bem-vindas! Sinta-se livre para abrir issues ou enviar PRs com melhorias.
 
 --- 
-📄 Licença
-MIT © Rafael Pereira Eloi do Nascimento
+
+## 📜 Licença
+Este projeto está licenciado sob a licença MIT — veja o arquivo LICENSE para detalhes.
