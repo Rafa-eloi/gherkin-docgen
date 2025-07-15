@@ -31,7 +31,7 @@ program
         .join("\n\n---\n\n");
 
       const outputDir = path.dirname(options.output);
-      fs.ensureDirSync(outputDir); // <-- Garante que a pasta exista
+      fs.ensureDirSync(outputDir); // garante que o diretório exista
 
       fs.writeFileSync(options.output, markdown, "utf-8");
 
